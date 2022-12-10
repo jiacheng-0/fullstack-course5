@@ -12,8 +12,8 @@ function ShoppingListController(ShoppingListService) {
 
   list.items = ShoppingListService.getItems();
 
-  list.itemName = "";
-  list.itemQuantity = "";
+  list.itemName = "cookie";
+  list.itemQuantity = "3";
 
   list.addItem = function () {
     ShoppingListService.addItem(list.itemName, list.itemQuantity);
@@ -77,8 +77,10 @@ function ShoppingListService($q, WeightLossFilterService) {
     var namePromise = WeightLossFilterService.checkName(name);
     var quantityPromise = WeightLossFilterService.checkQuantity(quantity);
 
+    console.log('start', new Date().toLocaleString())
     $q.all([namePromise, quantityPromise]).
     then(function (response) {
+      console.log('done', Date.now())
       var item = {
         name: name,
         quantity: quantity
@@ -86,6 +88,7 @@ function ShoppingListService($q, WeightLossFilterService) {
       items.push(item);
     })
     .catch(function (errorResponse) {
+      console.log('done', new Date().toLocaleString())
       console.log(errorResponse.message);
     });
   };
