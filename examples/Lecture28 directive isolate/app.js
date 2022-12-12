@@ -57,7 +57,7 @@ function ShoppingListController2(ShoppingListFactory) {
   var shoppingList = ShoppingListFactory(3);
 
   list.items = shoppingList.getItems();
-
+  list.title = "Shopping list " + list.items.length + " items"
   list.itemName = "";
   list.itemQuantity = "";
 
@@ -67,11 +67,12 @@ function ShoppingListController2(ShoppingListFactory) {
     } catch (error) {
       list.errorMessage = error.message;
     }
-
+    list.title = "Shopping list " + list.items.length + " items"
   };
 
   list.removeItem = function (itemIndex) {
     shoppingList.removeItem(itemIndex);
+    list.title = "Shopping list " + list.items.length + " items"
   };
 }
 
