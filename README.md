@@ -2,19 +2,23 @@
 
 This repository contains the source code for the [Single Page Web Applications with AngularJS](https://www.coursera.org/learn/single-page-web-apps-with-angularjs) hosted on [Coursera.org](https://www.coursera.org)
 
-## Module solutions
+## jiacheng-0 Module solutions
 
-https://jiacheng-0.github.io/fullstack-course5/module1-solution/index.html
+[module1-solution - Lunch Checker](https://jiacheng-0.github.io/fullstack-course5/module1-solution/index.html)
 
-https://jiacheng-0.github.io/fullstack-course5/module2-solution/index.html
+[module2-solution - Shopping List Check Off](https://jiacheng-0.github.io/fullstack-course5/module2-solution/index.html)
 
-https://jiacheng-0.github.io/fullstack-course5/module3-solution/index.html
+[module3-solution - Chinese Menu Search](https://jiacheng-0.github.io/fullstack-course5/module3-solution/index.html)
 
-https://jiacheng-0.github.io/fullstack-course5/module4-solution/index.html
+- Interactive search textbox and menu
 
-https://jiacheng-0.github.io/fullstack-course5/module5-solution/index.html#/
+[module4-solution - Menu App](https://jiacheng-0.github.io/fullstack-course5/module4-solution/index.html)
 
+- states, menu categories, menu items
 
+[module5-solution - Chinese Bistro](https://jiacheng-0.github.io/fullstack-course5/module5-solution/index.html#/)
+
+- add frontend, theme, sign up, validation
 
 
 ## Customer Website Launched
