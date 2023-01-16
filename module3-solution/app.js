@@ -20,7 +20,6 @@
                 return
             }
 
-            menuCtrl.found = []
             let promise = MenuSearchService.getMatchedMenuItems(menuCtrl.searchTerm)
             promise.then(function (response) {
                 menuCtrl.found = response
