@@ -4,6 +4,8 @@ This repository contains the source code for the [Single Page Web Applications w
 
 ## jiacheng-0 Module solutions
 
+### Click here for live deployed links
+
 [module1-solution - Lunch Checker](https://jiacheng-0.github.io/fullstack-course5/module1-solution/index.html)
 
 [module2-solution - Shopping List Check Off](https://jiacheng-0.github.io/fullstack-course5/module2-solution/index.html)
@@ -20,6 +22,17 @@ This repository contains the source code for the [Single Page Web Applications w
 
 - add frontend, theme, sign up, validation
 
+## To run locally
+
+Install: `npm install -g browser-sync`
+
+Check version: `browser-sync --version`
+
+Run local server: `browser-sync start --server --directory --files "**/*`
+
+- Whatever directory/file changes will cause the server to refresh.
+
+Other commands: `npm uninstall browser-sync`
 
 ## Customer Website Launched
 As part of this course we developed a *real* website for a *real* client. Below is a link to the final product. (*Note*, the site is left without speed optimization to keep it exactly as it was in the course. Site optimization wasn't part of the course).

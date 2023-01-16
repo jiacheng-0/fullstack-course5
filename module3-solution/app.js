@@ -12,11 +12,11 @@
     function NarrowItDownController(MenuSearchService) {
         let menuCtrl = this
         menuCtrl.searchTerm = ""
-
-        menuCtrl.found = []
+        menuCtrl.firstSearched = false
         menuCtrl.getItems = function () {
+            menuCtrl.firstSearched = true
             if (!menuCtrl.searchTerm) {
-                menuCtrl.found = null
+                menuCtrl.found = []
                 return
             }
 
@@ -77,6 +77,7 @@
             templateUrl: 'found-items.html',
             restrict: "E",
             scope: {
+                firstSearched: '<',
                 foundItems: '<',
                 onRemove: '&'
             }
